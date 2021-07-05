@@ -10,7 +10,7 @@ http://localhost:3000/
 
 # Google login
   1. Create google cloud account https://console.cloud.google.com/
-  2. Register project 
+  2. npm package - https://www.npmjs.com/package/react-google-login
 
 
 
