@@ -5,12 +5,15 @@
 /.pnp
 .pnp.js
 .vscode/
+
+#unwanted Files
+Notes
+*bk*
 # testing
 /coverage
 
 # production
 /build
-
 # misc
 .DS_Store
 .env.local
