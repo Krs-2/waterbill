@@ -1,0 +1,10 @@
+.login__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  .login {
+    display: flex;
+    flex-direction: column;
+  }
+}

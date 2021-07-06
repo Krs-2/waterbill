@@ -1,0 +1,11 @@
+.forgot__password__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  position: relative;
+  .forgot__password {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,39 @@
+$rootColor: #6c98e9;
+.verify__Bill__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  .verify_bill {
+    .form__row__item {
+      &:nth-child(3n) {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $rootColor;
+      }
+    }
+    .form-header {
+      margin-top: 2rem;
+
+      font-size: calc(1rem);
+      font-weight: 500;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    flex: 0.3 1;
+    display: flex;
+    flex-direction: column;
+    .edit__consumed__units {
+      cursor: pointer;
+      color: $rootColor;
+      font-size: calc(2rem);
+      margin: 0 0.5rem;
+      position: relative;
+      top: 10px;
+      left: 5px;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}

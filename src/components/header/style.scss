@@ -1,0 +1,110 @@
+$rootColor1: #6190e8;
+.menu__item {
+  color: $rootColor1;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid white;
+  &:hover {
+    color: white;
+    border: 1px solid white;
+    background-color: $rootColor1;
+  }
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0.9;
+  justify-content: space-between;
+  align-items: center;
+  .title__container {
+    flex: 0.8;
+  }
+  .navigation__panel {
+    flex: 1 100%;
+    margin-top: calc(1rem);
+    margin-bottom: calc(1.5rem);
+    a {
+      &:first-child {
+        border-radius: 4px 0 0 4px;
+      }
+      &:last-child {
+        border-right: 0;
+        border-radius: 0 4px 4px 0;
+      }
+      text-transform: capitalize;
+      background: #ffffff;
+      font-weight: 600;
+      background: linear-gradient(to bottom, #fff, $rootColor1);
+      border-right: 1px solid rgba(0, 0, 0, 0.3);
+
+      padding: 12px 20px;
+      text-decoration: none;
+      &:hover {
+        cursor: pointer;
+        box-shadow: inset 0 0 20px 1px $rootColor1;
+        background: white;
+        background: radial-gradient(circle, white 50%, $rootColor1 100%);
+      }
+    }
+  }
+  .login__container {
+    position: relative;
+    display: inline-flex;
+    flex: 0.1 1;
+    text-align: left;
+    justify-content: flex-end;
+    > * {
+      margin: 5px 10px;
+    }
+    .user_avatar {
+      @extend .menu__item;
+    }
+  }
+}
+.nav__items {
+  .top__icon {
+    position: absolute;
+    right: 4px;
+    top: calc(-2rem);
+    &:after {
+      content: "";
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid white;
+    }
+  }
+  z-index: 11;
+  position: absolute;
+  top: calc(56px);
+  background-color: white;
+  border: 1px solid $rootColor1;
+  border-radius: 5px;
+  font-weight: 500;
+  .nav__item {
+    padding: 8px;
+    width: calc(5.5rem);
+    text-align: center;
+    &:nth-child(2n) {
+      border-bottom: 1px solid #6190e8;
+    }
+    &:last-child {
+      padding: 5px 8px;
+      padding-bottom: px;
+    }
+    &:hover {
+      color: white;
+      cursor: pointer;
+      background-color: $rootColor1;
+    }
+  }
+  .logout__btn_g {
+    all: unset !important;
+    > div {
+      display: none;
+    }
+    > span {
+      padding: 0 !important;
+    }
+  }
+}

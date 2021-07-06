@@ -1,0 +1,43 @@
+.recent__bills__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  row-gap: 8px;
+  column-gap: 8px;
+  .recent__bills__row {
+    .archieve__item {
+      cursor: pointer;
+    }
+    &:last-child {
+      margin-top: 8px;
+
+      text-align: center;
+    }
+  }
+
+  .recent__bills__item {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid lightgray;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0px 0px 1px 1px #adacacc7;
+
+    .edit__consumed__units {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      cursor: pointer;
+      cursor: pointer;
+    }
+    &:hover {
+      box-shadow: 0px 0px 2px 2px #4ca4ecc7;
+    }
+  }
+  .active {
+    order: -1;
+    border: 1px solid #6d99ea;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0px 0px 1px 1px #6d99ea;
+  }
+}

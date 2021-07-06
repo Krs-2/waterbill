@@ -1,0 +1,16 @@
+.user__mgmt_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: row;
+  .user__flex {
+    display: flex;
+    flex: 0.5;
+    .user__item {
+      display: inline-block;
+      .details {
+        word-break: break-word;
+      }
+    }
+  }
+}
