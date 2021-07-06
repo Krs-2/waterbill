@@ -3,10 +3,11 @@
 Dummy project with React-Redux, React-Hooks, React-Router, Express, Google-Login.
 
 # How To Run
- Install npm module - *npm i*
- Front React-server End - *npm start*
+ 1.Install npm modules - *npm install*
  
- Back End Express server - *node -r esm server.js*
+ 2.Front React-server End - *npm start*
+ 
+ 3.Back End Express server - *node -r esm server.js*
  
 http://localhost:3000/
 
